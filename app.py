@@ -1,6 +1,8 @@
 import streamlit as st
- 
-st.write("""
-# Bot Demo
-Criar *tudo!*
-""")
+
+with st.sidebar:
+    with st.expander("Criar novo Bot"):
+        bot_input = st.text_input("Nome do Bot")
+    st.title("hypebots")
+    st.divider()
+    
